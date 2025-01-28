@@ -13,10 +13,10 @@ class Component3 extends StatelessWidget {
 
     return Column(
       children: [
-        SizedBox(height: 10), // 10px fixed margin for top spacing
+        const SizedBox(height: 11), // 10px fixed margin for top spacing
         // Divider
         Container(
-          width: deviceWidth * 0.9, // 90% of device width
+          width: deviceWidth * 0.89, // 90% of device width
           height: 2,
           decoration: BoxDecoration(
             color: const Color(0xFF2F5B6C),

@@ -1,4 +1,5 @@
 import 'package:d1mm4/controllers/accessibility_controller.dart';
+import 'package:d1mm4/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -22,7 +23,7 @@ class Component2 extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(
             horizontal: deviceWidth * 0.02,
-            vertical: deviceHeight * 0.02), // Make padding responsive
+            vertical: deviceHeight * 0.001), // Make padding responsive
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -61,7 +62,7 @@ class Component2 extends StatelessWidget {
     final double itemWidth =
         deviceWidth * 0.2; // Use responsive width for each item
     final double itemHeight =
-        deviceWidth * 0.12; // Adjust height based on width for better scaling
+        deviceWidth * 0.13; // Adjust height based on width for better scaling
 
     return GestureDetector(
       onTap: () {
@@ -70,7 +71,7 @@ class Component2 extends StatelessWidget {
         // Navigation logic based on index
         if (index == 1) {
           // Navigate to D1CM6 when "My Transactions" is clicked
-          Get.toNamed('/d1cm6');
+          Get.toNamed(AppRoutes.d1cm6);
         }
       },
       child: Obx(() {
@@ -88,7 +89,7 @@ class Component2 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                width: itemWidth * 0.5, // Scale icon size based on item width
+                width: itemWidth * 0.6, // Scale icon size based on item width
                 height:
                     itemHeight * 0.7, // Scale icon size based on item height
                 alignment: Alignment.center,
